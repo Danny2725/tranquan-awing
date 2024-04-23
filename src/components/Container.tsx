@@ -323,8 +323,16 @@ function Container() {
                 onChange={handleChange}
                 aria-label="lab API tabs example"
               >
-                <Tab label="Thông tin" value="1" />
-                <Tab label="Chiến dịch con" value="2" />
+                <Tab
+                  label={<Typography fontWeight="bold">Thông tin</Typography>}
+                  value="1"
+                />
+                <Tab
+                  label={
+                    <Typography fontWeight="bold">Chiến dịch con</Typography>
+                  }
+                  value="2"
+                />
               </TabList>
             </Box>
             <TabPanel value="1">
